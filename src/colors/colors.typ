@@ -77,6 +77,109 @@
 
 
 
+#let shades = (
+  green: (
+    lightest: rgb("#FAFFE6"),
+    lighter: rgb("#F1FFB8"),
+    light: rgb("#E8FF8A"),
+    brighter: rgb("#DEFF5C"),
+    bright: rgb("#D5FF2E"),
+    mid: rgb("#CCFF00"),
+    dusk: rgb("#A7D100"),
+    dark: rgb("#83A300"),
+    darker: rgb("#5E7500"),
+    darkest: rgb("#394700"),
+  ),
+  red: (
+    lightest: rgb("#FFE6E6"),
+    lighter: rgb("#FFB8B8"),
+    light: rgb("#FF8A8A"),
+    brighter: rgb("#FF5C5C"),
+    bright: rgb("#FF2E2E"),
+    mid: rgb("#FF0000"),
+    dusk: rgb("#D10000"),
+    dark: rgb("#A30000"),
+    darker: rgb("#750000"),
+    darkest: rgb("#470000"),
+  ),
+  orange: (
+    lightest: rgb("#FFF0E6"),
+    lighter: rgb("#FFD4B8"),
+    light: rgb("#FFB98A"),
+    brighter: rgb("#FF9D5C"),
+    bright: rgb("#FF822E"),
+    mid: rgb("#FF6600"),
+    dusk: rgb("#D15400"),
+    dark: rgb("#A34100"),
+    darker: rgb("#752F00"),
+    darkest: rgb("#471D00"),
+  ),
+  blue: (
+    lightest: rgb("#E6FFFF"),
+    lighter: rgb("#B8FFFF"),
+    light: rgb("#8AFFFF"),
+    brighter: rgb("#5CFFFF"),
+    bright: rgb("#33FFFF"),
+    mid: rgb("#00FFFF"),
+    dusk: rgb("#00D1D1"),
+    dark: rgb("#00A3A3"),
+    darker: rgb("#007575"),
+    darkest: rgb("#004747"),
+  ),
+
+  yellow: (
+    lightest: rgb("#FFFFE6"),
+    lighter: rgb("#FFFFB8"),
+    light: rgb("#FFFF8A"),
+    brighter: rgb("#FFFF5C"),
+    bright: rgb("#FFFF2E"),
+    mid: rgb("#FFFF00"),
+    dusk: rgb("#D1D100"),
+    dark: rgb("#A3A300"),
+    darker: rgb("#757500"),
+    darkest: rgb("#474700"),
+  ),
+
+  purple: (
+    lightest: rgb("#FFE6FF"),
+    lighter: rgb("#FFB8FF"),
+    light: rgb("#FF8AFF"),
+    brighter: rgb("#FF5CFF"),
+    bright: rgb("#FF2EFF"),
+    mid: rgb("#FF00FF"),
+    dusk: rgb("#D100D1"),
+    dark: rgb("#A300A3"),
+    darker: rgb("#750075"),
+    darkest: rgb("#470047"),
+  ),
+
+  brown: (
+    lightest: rgb("#FAF5EB"),
+    lighter: rgb("#F1E2C6"),
+    light: rgb("#E8D0A1"),
+    brighter: rgb("#DEBE7C"),
+    bright: rgb("#D5AB58"),
+    mid: rgb("#CC9933"),
+    dusk: rgb("#A77D2A"),
+    dark: rgb("#836221"),
+    darker: rgb("#5E4617"),
+    darkest: rgb("#392B0E"),
+  ),
+
+  leafGreen: (
+    lightest: rgb("#EEF6EE"),
+    lighter: rgb("#D0E7D0"),
+    light: rgb("#B1D8B1"),
+    brighter: rgb("#99CC99"),
+    bright: rgb("#74B974"),
+    mid: rgb("#55AA55"),
+    dusk: rgb("#468B46"),
+    dark: rgb("#376D37"),
+    darker: rgb("#274E27"),
+    darkest: rgb("#182F18"),
+  )
+)
+
 
 // These colors are pallete colors based on core colors above
 
