@@ -1,39 +1,19 @@
-<style>
-    .custom-header {
-        font-size: 3em;
-        font-weight: bold;
-        display: flex;
-        justify-content: center;
-    }
 
-    .definition {
-        padding: 1em;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        margin-bottom: 1em;
-
-    }
-
-    .api {
-        color: rgba(77, 175, 125, 0.5);
-        font-size: 1.3em;
-    }
-
-</style>
-<div class="custom-header">
-    <p>Atoms</p>
+<div align="center">
+    <h1>Atoms</h1>
     <img src="images/atoms-icon.svg" alt="Atoms Logo">
-</div>
-A typst ui library
-
-
-
-
-<div>
-    Current Components (Beta - still potential to change)
+    
+    A typst ui library for computer science papers, research, and brainstorming :).
 </div>
 
-- [Card](#Card) (working on)
+
+
+
+
+## Current Components (Beta - still potential to change)
+
+
+- <a href="#Card">Card</a> (working on)
 - [Button](#Buttons)
 ------
 
