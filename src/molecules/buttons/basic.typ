@@ -1,3 +1,5 @@
+#import "../../colors/colors.typ": *
+
 #let basicButton(
   content,
   variant: "default",  
@@ -13,9 +15,9 @@
   let variants = (
     default: (fill: luma(240), stroke: 1pt + luma(200), text: black),
     primary: (fill: rgb("#2563eb"), stroke: none, text: white),
-    secondary: (fill: rgb("#64748b"), stroke: none, text: white),
+    secondary: (fill: system.green, stroke: none, text: whites.standard),
     ghost: (fill: none, stroke: 1pt + luma(200), text: black),
-    destructive: (fill: rgb("#dc2626"), stroke: none, text: white),
+    destructive: (fill: reds.alertRed, stroke: none, text: white),
   )
   
   let sizes = (

@@ -6,11 +6,11 @@
 #card(config: (
   padding: 16pt,
   radius: 8pt,
-  border: (width: 2pt, color: blue),
+  border: (width: 0.5pt, color: rgb(0, 0, 0)),
   header: (title: "Example Header :p", icon: emoji.gear),
 ))[
   #align(center)[
     #text()[Hello, world!] \ 
-    #basicButton("Hello world!", variant: "destructive", size: "lg")
+    #basicButton([#link("https://github.com/TuringProblem")[Hello world!]], variant: "secondary", size: "lg")
   ]
 ]
