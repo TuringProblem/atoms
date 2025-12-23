@@ -13,11 +13,11 @@
 ) = {
 
   let variants = (
-    default: (fill: luma(240), stroke: 1pt + luma(200), text: black),
-    primary: (fill: rgb("#2563eb"), stroke: none, text: white),
-    secondary: (fill: system.green, stroke: none, text: whites.standard),
+    default: (fill: shades.green.mid, stroke: 1pt + luma(200), text: black),
+    primary: (fill: shades.green.lighter, stroke: none, text: white),
+    secondary: (fill: black, stroke: none, text: whites.standard),
     ghost: (fill: none, stroke: 1pt + luma(200), text: black),
-    destructive: (fill: reds.alertRed, stroke: none, text: white),
+    alert: (fill: reds.alertRed, stroke: none, text: white),
   )
   
   let sizes = (
@@ -46,6 +46,8 @@
       fill: final-text-color,
       size: s.text-size,
       weight: "medium",
-    )[#content]
+    )[
+      #content
+    ]
   ]
 }

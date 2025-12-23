@@ -90,6 +90,7 @@
     darker: rgb("#5E7500"),
     darkest: rgb("#394700"),
   ),
+
   red: (
     lightest: rgb("#FFE6E6"),
     lighter: rgb("#FFB8B8"),
@@ -102,6 +103,7 @@
     darker: rgb("#750000"),
     darkest: rgb("#470000"),
   ),
+
   orange: (
     lightest: rgb("#FFF0E6"),
     lighter: rgb("#FFD4B8"),
@@ -114,6 +116,7 @@
     darker: rgb("#752F00"),
     darkest: rgb("#471D00"),
   ),
+
   blue: (
     lightest: rgb("#E6FFFF"),
     lighter: rgb("#B8FFFF"),
@@ -177,7 +180,20 @@
     dark: rgb("#376D37"),
     darker: rgb("#274E27"),
     darkest: rgb("#182F18"),
-  )
+  ),
+
+  white: (
+    lightest: rgb("#FFFFFF"),
+    lighter: rgb("#E7E7E7"),
+    light: rgb("#CFCFCF"),
+    brighter: rgb("#B6B6B6"),
+    bright: rgb("#9E9E9E"),
+    mid: rgb("#868686"),
+    dusk: rgb("#6E6E6E"),
+    dark: rgb("#555555"),
+    darker: rgb("#3D3D3D"),
+    darkest: rgb("#252525"),
+  ),
 )
 
 
