@@ -4,7 +4,7 @@
   content,
   variant: "default",  
   size: "md",
-  fill: auto,
+  bg-color: auto,
   stroke: auto,
   text-color: auto,
   radius: auto,
@@ -29,7 +29,7 @@
   let v = variants.at(variant)
   let s = sizes.at(size)
   
-  let final-fill = if fill != auto { fill } else { v.fill }
+  let final-fill = if bg-color != auto { bg-color } else { v.fill }
   let final-stroke = if stroke != auto { stroke } else { v.stroke }
   let final-text-color = if text-color != auto { text-color } else { v.text }
   let final-radius = if radius != auto { radius } else { s.radius }
