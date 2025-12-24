@@ -1,5 +1,21 @@
 #import "../../colors/colors.typ": *
 
+/**
+ * IDEA:
+ * 
+ * 
+ (Variants: 
+  > main - Classic, looks popping 
+
+ )
+ *
+ *
+ *
+ *
+ *
+ *
+**/
+
 #let composeVariantsWithSizes(variants, sizes) = {
   let v = variants.at(variant)
   let s = sizes.at(size)
@@ -13,7 +29,7 @@
 }
 
 
-#let card(content, config: (:),) = {
+#let card(content, vriant: "default", config: (:),) = {
   //TODO: figure out how to add variants into this FUNCTIONALLY 
   let variants = (
     default: (border: (width: none, color: none, style: none), background: (color: shades.white.lighter, gradient: none)),
@@ -29,13 +45,15 @@
   )
 
 
+
   let defaults = (
       header: none,  
+      size: "md",
       padding: 12pt,
       radius: 4pt,
       border: (
         width: 0.5pt,
-        color: black,
+        color: none,
         style: "solid",
       ),
       background: (
@@ -47,7 +65,13 @@
 
   let merged = defaults + config
   let values = merged.keys()
-  let specialValues = values.filter(x => x == values.at(0)).map(x => x + " Zaddy")
+  let parseFunction(value) = {
+    if value == "header" {
+      return variants.keys()
+    }
+  }
+
+  let specialValues = values.filter(x => x == values.at(0)).map(x => parseFunction(x))
 
   let apply-shadow(body) = {
     if merged.shadow != none {
@@ -83,11 +107,9 @@
       ]
       #content\
 
-/*
       #align(center)[
-        #specialValues
+      #specialValues
       ]
-      */
     ]
   )
 }

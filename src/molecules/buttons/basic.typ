@@ -14,7 +14,7 @@
 
   let variants = (
     default: (fill: shades.green.mid, stroke: 1pt + luma(200), text: black),
-    primary: (fill: shades.green.lighter, stroke: none, text: white),
+    primary: (fill: shades.white.mid, stroke: none, text: white),
     secondary: (fill: black, stroke: none, text: whites.standard),
     ghost: (fill: none, stroke: 1pt + luma(200), text: black),
     alert: (fill: reds.alertRed, stroke: none, text: white),

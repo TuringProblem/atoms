@@ -1,5 +1,5 @@
 #import "src/molecules/buttons/basic.typ": * 
-#import "src/molecules/cards/example.typ": *
+#import "src/molecules/cards/card.typ": *
 
 
 #let mainConfig = (
@@ -11,14 +11,38 @@
 )
 
 
-#card(config: mainConfig)[
-  #align(center)[
-    #text()[Hello, world!] \ 
-    #basicButton([#link("https://github.com/TuringProblem")[Hello world!]], variant: "secondary", size: "lg")
-  ]
-]
+
+#let header = (icon: emoji.money, content: "Hello, World", size: "3xl")
+#let pos = (card-pos: "center", text-pos: "center", header-pos: "center")
+#let secondPos = (card-pos: "center", text-pos: "center", header-pos: "center")
 
 
+#let cont = [
+#card(header: none, [
+
+Check out my github :)
 #align(center)[
-  #basicButton([#link("https://github.com/TuringProblem")[Github]], variant: "alert", size: "lg")
+  #basicButton([#link("https://github.com/TuringProblem")[Click]], variant: "alert", size: "lg")
 ]
+
+], width: 50%, positions: secondPos)
+
+
+shit
+what is 
+
+]
+
+#card(header: header, cont, width: 80%, positions: pos)
+
+
+
+
+
+
+
+
+
+
+
+

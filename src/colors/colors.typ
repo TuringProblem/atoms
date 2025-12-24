@@ -194,6 +194,20 @@
     darker: rgb("#3D3D3D"),
     darkest: rgb("#252525"),
   ),
+
+  gray: (
+    lightest: rgb("#F9F9F9"),
+    border-lightest: rgb("#F4F4F4"),
+    lighter: rgb("#E7E7E7"),
+    light: rgb("#CFCFCF"),
+    brighter: rgb("#B6B6B6"),
+    bright: rgb("#9E9E9E"),
+    base: rgb("#868686"),
+    mid: rgb("#6E6E6E"),
+    dark: rgb("#555555"),
+    darker: rgb("#3D3D3D"),
+    darkest: rgb("#252525"),
+  ),
 )
 
 
