@@ -1,27 +1,25 @@
-#import "src/molecules/cards/card.typ": *
+#import "src/molecules/cards/real-card.typ": *
 
-// Test the user's exact example
-#let content = (header: [
-  hello world
-], body: [
-hello 
+/**
+ *
+ * Definition:
+ * > content: (size: {sm, md, lg, xl, 2xl, 3xl}, width: 100%, height: 100%, )
+ * > 
+ *
+ */
 
-body\
 
 
-], footer: [hello footer])
 
-#card(variant: "default", size: "md", position: "left", ..content)
+#let mainContent = (
+  main: (pos: "center", width: "xl", height: "3xl", background-color: rgb(225, 225, 225)),
+  header: (title: "hello, world", size: "2xl"),
+)
 
-#v(1em)
 
-#card(variant: "primary", size: "lg", position: "center", ..content)
+#testCard(mainContent: mainContent)
 
-#v(1em)
 
-#card(variant: "ghost", size: "xl", position: "right", ..content)
 
-#v(1em)
 
-// Test with just body content (should still work)
-#card(variant: "secondary", size: "3xl", position: "center")[Simple body content without header or footer]
+

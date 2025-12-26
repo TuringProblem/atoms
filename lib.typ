@@ -11,6 +11,15 @@
 )
 
 
+#let mainContent = (
+  width: 100%,
+  height: "sm",
+  header: (width: 100%, pos: "center", icon: none, content: "Title", size: "sm"),
+  body: (width: 100%, pos: "center", content: "Body content"),
+  footer:(),
+)
+
+
 
 #let header = (icon: emoji.money, content: "Hello, World", size: "3xl")
 #let pos = (card-pos: "center", text-pos: "center", header-pos: "center")

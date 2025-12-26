@@ -3,8 +3,11 @@
 
 #let card(header: (:), content, variant: "standard", width: 100%, positions: (:)) = {
 
+
   let variants = (
-    standard: (),
+      default: (),
+      research: (),
+      split: (),
   )
 
 align(alignment.at(positions.card-pos))[
