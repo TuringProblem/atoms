@@ -4,6 +4,9 @@
 */
 
 //: rgb(""),
+
+// ====== BASE COLORS ======
+
 #let reds = (
   alertRed: rgb("#dc2626"),
   standard: red,
@@ -210,8 +213,9 @@
   ),
 )
 
-
 // These colors are pallete colors based on core colors above
+
+// ====== PALLETES ======
 
 #let system = (
   green: greens.mint,
@@ -219,4 +223,21 @@
   gray: whites.shade,
   blue: blues.sky,
   purple: purples.dataDog,
+)
+
+
+
+
+
+
+// ====== CARDS ======
+
+#let cards = (
+  full: (
+    background: rgb(225, 225, 225), 
+    card-background: shades.gray.lightest,
+    card-border: shades.gray.border-lightest,
+
+  )
+
 )

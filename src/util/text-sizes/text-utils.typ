@@ -14,7 +14,7 @@
   lg: 14pt,
   xl: 16pt,
   "2xl": 18pt,
-  "3xl": 816pt,
+  "3xl": 820pt,
   ),
   width: (
     sm: 100%,

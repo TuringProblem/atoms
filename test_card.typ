@@ -7,19 +7,28 @@
  * > 
  *
  */
+// zIndex: none,
 
 
+#let contentBody = [
+hello
+  #align(center)[
+
+  ```js
+  console.log()
+  ```
+  ]
 
 
-#let mainContent = (
-  main: (pos: "center", width: "xl", height: "3xl", background-color: rgb(225, 225, 225)),
+  #testCard(cardPosition: 2cm, variant: "inside")
+]
+
+#let cardContentExample = (
+  container: (),
   header: (title: "hello, world", size: "2xl"),
+  content: (pos: "left", content: contentBody),
 )
 
-
-#testCard(mainContent: mainContent)
-
-
-
-
+#testCard(variant: "full", mainContent: cardContentExample)
+shit
 
