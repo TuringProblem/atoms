@@ -1,4 +1,6 @@
 #import "src/molecules/cards/real-card.typ": *
+#import "src/molecules/buttons/basic.typ": *
+
 
 /**
  *
@@ -15,20 +17,32 @@ hello
   #align(center)[
 
   ```js
-  console.log()
+  console.log("hello world");
+  const add = a => b => a + b;
   ```
   ]
 
+  #testCard(cardMetaData: (containerCoordinates: (dx: 8.5cm, dy: 0cm), containerWidth: 300pt, containerHeight: 300pt, background: shades.gray.light), variant: "inside", data: [
+  Hey, I'm the creator of this 
 
-  #testCard(cardPosition: 2cm, variant: "inside")
+    #basicButton([#link("https://github.com/TuringProblem")[#image("images/github.png", width: 0.5cm)]], metadata: (dy: -0.8cm, dx: 4.5cm), variant: "alert", size: "sm")\
+    #align(left)[
+      hello
+    ]
+
+  ])\
+
+
+  and that is something that you needed for that\
+  I know that you wanted to talke about this...
+
+
 ]
 
 #let cardContentExample = (
   container: (),
-  header: (title: "hello, world", size: "2xl"),
+  header: (title: "Example, world", size: "2xl"),
   content: (pos: "left", content: contentBody),
 )
 
 #testCard(variant: "full", mainContent: cardContentExample)
-shit
-

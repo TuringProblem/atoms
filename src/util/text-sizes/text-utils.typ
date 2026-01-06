@@ -12,8 +12,8 @@
   sm: 10pt,
   md: 12pt,
   lg: 14pt,
-  xl: 16pt,
-  "2xl": 18pt,
+  xl: 300pt,
+  "2xl": 400pt,
   "3xl": 820pt,
   ),
   width: (
@@ -25,9 +25,6 @@
     "3xl": 565pt,
   ),
 )
-
-
-
 
 #let alignment = (
   left: left,

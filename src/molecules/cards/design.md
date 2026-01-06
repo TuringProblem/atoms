@@ -45,3 +45,11 @@ mainContent = (
 so the variants, are essentially going to lay
 
 
+
+
+
+issues:
+
+
+
+> figure out design for card, within a card.

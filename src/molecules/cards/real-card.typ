@@ -15,14 +15,21 @@
 
 // wish there was pattern matching :/
 
-#let testCard(cardPosition: 0cm, variant: "full", mainContent: (:)) = {
-  let header = ternary(variant == "full", variants.full.header.title, "")
-  let size = textSizes.at(ternary(variant == "full", variants.full.header.size, "sm"))
-  let cardSize = cardSizes.height.at(ternary(variant == "full", variants.full.main.height, "xl"))
-  let cardWidth = cardSizes.width.at(ternary(variant == "full", variants.full.main.width, "xl"))
-
+#let testCard(cardMetaData: (containerCoordinates: (dx: 0cm, dy: 0cm), containerWidth: none, containerHeight: none, background: none), variant: "full", mainContent: (:), data: none) = {
 
   let combinedContent = variants + mainContent
+
+  let header = ternary(variant == "full", variants.full.header.title, "")
+  let size = textSizes.at(ternary(variant == "full", variants.full.header.size, "sm"))
+  // need to check if there is no data from user
+  let mainHeight = combinedContent.inside.main.at("height")
+  let cardSize = cardSizes.height.at(ternary(variant == "full", variants.full.main.height, mainHeight))
+  // need to check if there is no data from user
+  let mainWidth = combinedContent.inside.main.at("width")
+  let cardWidth = cardSizes.width.at(ternary(variant == "full", variants.full.main.width, mainWidth))
+  let color = cardMetaData.background
+
+
 
   let vals = variants.at(variant)
   let values = vals.values()
@@ -53,13 +60,12 @@
         ]
       ]
     ]
-  } else {
+  } else if variant == "inside" {
     align(alignment.at(variants.inside.main.pos))[
-      #place(dy: cardPosition)[
-        #box(width: cardWidth, fill: cards.full.card-background, inset: 6pt, radius: 4pt, stroke: 1pt + cards.full.card-border, height: cardSize)[
-          #emoji.fire 
-          I'm dumbb
-          #text(size: size)[ #header ]\
+      #place(dy: cardMetaData.containerCoordinates.dy, dx: cardMetaData.containerCoordinates.dx)[
+        #box(width: cardMetaData.containerWidth, fill: color, inset: 6pt, radius: 4pt, stroke: 1pt + cards.full.card-border, height: cardMetaData.containerHeight)[
+          #v(0.3cm)
+          #data
         ]
       ]
     ]

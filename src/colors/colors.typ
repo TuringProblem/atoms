@@ -237,7 +237,10 @@
     background: rgb(225, 225, 225), 
     card-background: shades.gray.lightest,
     card-border: shades.gray.border-lightest,
+  ),
 
+  inner: (
+    background: shades.gray.lighter,
   )
 
 )

@@ -2,6 +2,8 @@
 
 #let basicButton(
   content,
+  metadata: (dx: 0cm, dy: 0cm),
+  link: none,
   variant: "default",  
   size: "md",
   bg-color: auto,
@@ -18,6 +20,7 @@
     secondary: (fill: black, stroke: none, text: whites.standard),
     ghost: (fill: none, stroke: 1pt + luma(200), text: black),
     alert: (fill: reds.alertRed, stroke: none, text: white),
+    github: (fill: shades.white.dark, stroke: none, text: whites.standard),
   )
   
   let sizes = (
@@ -35,7 +38,8 @@
   let final-radius = if radius != auto { radius } else { s.radius }
   let final-width = if block { 100% } else { width }
   
-  box(
+  place(dy: metadata.dy, dx: metadata.dx)[
+  #box(
     fill: final-fill,
     stroke: final-stroke,
     radius: final-radius,
@@ -47,7 +51,8 @@
       size: s.text-size,
       weight: "medium",
     )[
-      #content
+      #if variant == "github" { link(link)[#image("../../../images/github.png")] } else { content }
     ]
+  ]
   ]
 }
