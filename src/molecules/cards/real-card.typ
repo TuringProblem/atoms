@@ -35,9 +35,6 @@
   let values = vals.values()
   let keys = vals.keys()
 
- 
-
-
 
 // I want to normalize Combined and only get the needed content
 

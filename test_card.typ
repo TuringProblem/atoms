@@ -41,7 +41,7 @@ hello
 
 #let cardContentExample = (
   container: (),
-  header: (title: "Example, world", size: "2xl"),
+  header: (title: "Page One", size: "2xl"),
   content: (pos: "left", content: contentBody),
 )
 
