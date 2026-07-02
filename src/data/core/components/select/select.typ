@@ -1,9 +1,9 @@
 #import "../../../../shared/widgets/tokens.typ": *
 
 
-#let select(predicate, table, color: rgb(15, 160, 255)) = {
+#let select(predicate, table, color: black) = {
   box(outset: 4pt, radius: 4pt)[
-    ($tokens.Select_#predicate$(#text(fill: color)[#emph[#table]]))
+    $tokens.Select#sub[(#predicate)]$(#text(fill: color)[#table])
   ]
 }
 
