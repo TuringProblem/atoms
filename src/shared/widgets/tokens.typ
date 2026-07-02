@@ -11,16 +11,3 @@
   "And": $and$,
   "Or": $or$,
 )
-
-#tokens.at("CartesianProduct")
-
-#let nj = tokens.at("Join").at("normal")
-
-1. #emph[value] #tokens.at("AssignmentOperator") Table #nj Table ... 
-2. #emph[value] #tokens.at("AssignmentOperator") Table #nj Table ... 
-3. 
-
-
-
-
-
