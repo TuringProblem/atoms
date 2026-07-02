@@ -18,6 +18,13 @@
 "three",
 )
 
-// example
+// example {complex}
 #project(..args, [#select([name = "Something"], "Table", color: red)])
+
+
+#let assignment = project("useName", "table", varName: "A")
+
+
+#assignment
+
 
