@@ -14,6 +14,6 @@
 }
 
 // example
-#select([name = "something"], "Table")
+#select([name = "something" #tokens.And something = "else"], "Table")
 
 #select([name = "something"], "Table", varName: "A")
