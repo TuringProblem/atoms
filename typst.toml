@@ -1,0 +1,9 @@
+[package]
+name = "atoms"
+version = "0.1.0"
+entrypoint = "src/lib.typ"
+authors = ["TuringProblem"]
+license = "MIT"
+description = "Computer Science Component Library for writing notes/psets/proofs"
+
+

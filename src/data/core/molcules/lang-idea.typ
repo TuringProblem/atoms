@@ -1,3 +1,4 @@
+// DISREGARD THIS FILE - THIS IS JUST FOR ME (BRAINSTORMING lol)
 #import "../atoms/join/normal/normal.join.typ": *
 #import "../atoms/join/theta/theta.join.typ": *
 #import "../atoms/project/project.typ": *

@@ -1,18 +1,6 @@
-#import "../atoms/join/normal/normal.join.typ": *
-#import "../atoms/join/theta/theta.join.typ": *
-#import "../atoms/project/project.typ": *
-#import "../atoms/select/select.typ": *
-
-// for now because I don't have the langauge, I will make it - we will use this
-
-#let data = (
-  (select("something", normalJoin("t1", "t2"), varName: "A")),
-  (select("name = 'John'", "A", color: red, varName: "B")),
-  ([B $qed$]),
-)
-
-#let problem = "Select something from t1 ^ t2 then from that get john"
-
+/**
+ * Author: { TuringProblem } : @12:11 20260703
+**/
 #let proofCard(data, problem: "", width: auto, position: center, color: rgb(222, 222, 222)) ={
   let flat = data.flatten()
   let number = 0
@@ -31,5 +19,20 @@
     ]
   ]
 }
+
+#import "../atoms/join/normal/normal.join.typ": *
+#import "../atoms/join/theta/theta.join.typ": *
+#import "../atoms/project/project.typ": *
+#import "../atoms/select/select.typ": *
+
+// for now because I don't have the langauge, I will make it - we will use this
+
+#let data = (
+  (select("something", normalJoin("t1", "t2"), varName: "A")),
+  (select("name = 'John'", "A", color: red, varName: "B")),
+  ([B $qed$]),
+)
+
+#let problem = "Select something from t1 ^ t2 then from that get john"
 
 #proofCard(data, problem: problem, width: 50%, position: center)

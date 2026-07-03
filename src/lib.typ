@@ -3,3 +3,4 @@
 #import "data/core/atoms/join/theta/theta.join.typ": *
 #import "data/core/atoms/project/project.typ": *
 #import "data/core/atoms/select/select.typ": *
+#import "data/core/molcules/proof-card.typ": *

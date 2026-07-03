@@ -1,2 +1,4 @@
 # Generated PDFs from Typst files
 *.pdf
+
+docs/
