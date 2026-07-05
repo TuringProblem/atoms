@@ -1,7 +1,8 @@
 /**
  * Author: { TuringProblem } : @12:11 20260703
 **/
-#let proofCard(data, problem: "", width: auto, position: center, color: rgb(222, 222, 222)) ={
+/// mmmmmm why can't I do that... 
+#let proofCard(data, problem: (title: "", color: black), width: auto, position: center, color: rgb(222, 222, 222)) ={
   let flat = data.flatten()
   let number = 0
 
@@ -9,7 +10,7 @@
     #box(inset: 8pt, fill: color, width: width, radius: 2pt)[
       #if problem != "" {
         box(inset: 6pt)[
-        #text(size: 8pt, fill: white, weight: "bold", top-edge: 2pt, bottom-edge: 2pt)[#problem]
+        #text(size: 8pt, fill: problem.color, weight: "bold", top-edge: 2pt, bottom-edge: 2pt)[#problem.title]
         ]
       }
       #for item in flat {
@@ -19,6 +20,9 @@
     ]
   ]
 }
+
+
+// example
 
 #import "../atoms/join/normal/normal.join.typ": *
 #import "../atoms/join/theta/theta.join.typ": *
@@ -33,6 +37,6 @@
   ([B $qed$]),
 )
 
-#let problem = "Select something from t1 ^ t2 then from that get john"
+#let problem = (title: "Select something from t1 ^ t2 then from that get john", color: rgb(0, 0, 0))
 
 #proofCard(data, problem: problem, width: 50%, position: center)

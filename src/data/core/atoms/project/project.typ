@@ -4,11 +4,11 @@
 #let project(..args, table, color: black, varName: "") = {
   if varName != "" {
     box(outset: 4pt, radius: 4pt)[
-      #varName #tokens.AssignmentOperator #text(fill: color)[$#tokens.Projection#sub[(#args.pos().join(", "))]$(#text(fill:  color)[#table])]
+      #text(fill: color)[#varName] #tokens.AssignmentOperator $#tokens.Projection#sub[(#args.pos().join(", "))]$(#table)
     ]
   } else {
     box(outset: 4pt, radius: 4pt)[
-      $#tokens.Projection#sub[(#args.pos().join(", "))]$(#text(fill:  color)[#table])
+      #text(fill: color)[$#tokens.Projection#sub[(#args.pos().join(", "))]$(#table)]
     ]
   }
 }
