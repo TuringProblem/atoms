@@ -5,3 +5,4 @@
 #import "data/core/atoms/select/select.typ": *
 #import "data/core/molcules/proof-card.typ": *
 #import "util/colorelem.typ": *
+#import "palette/core/main.typ": *
